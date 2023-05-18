@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+
+    <!-- <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script> -->
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- <script>
+        if (window.module) module = window.module;
+    </script> -->
+
+    <style type="text/css">
+        body {
+            margin: 50px;
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 255, 255, 0.38);
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        canvas {
+            border: 2px solid black;
+            position: relative;
+            display: inline-block;
+        }
+
+        #mainSquare {
+            margin: auto;
+            background-color: black;
+            width: 462px;
+            position: relative;
+        }
+
+        #title {
+            margin: auto;
+            color: red;
+            width: 345px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 250%;
+        }
+
+        #tryagain {
+            margin: auto;
+            width: 195px;
+            background-color: #00a600;
+            position: relative;
+            color: white;
+            padding: 20px;
+            font-size: 200%;
+            display: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--<h1 id="title">Tic-Tac-Toe Game</h1>-->
+
+<div id="rep" style="margin: auto; width: 70px;"><h1 id="results" style="color: #f421a5;">Play</h1></div>
+
+<div id="tryagain">Play Again!!</div>
+
+<br><br>
+
+<div id="mainSquare"></div>
+
+</body>
+<script type='module' src='./renderer.js'></script>
+</html>
